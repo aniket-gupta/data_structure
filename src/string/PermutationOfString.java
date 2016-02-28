@@ -2,6 +2,7 @@ package string;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -9,13 +10,14 @@ import java.util.List;
 public class PermutationOfString {
 
 	public static void main(String[] args) {
-//		long t1 = System.currentTimeMillis();
-//		List<String> list = permutation("bcda");
-//		System.out.println("Time taken: " + (System.currentTimeMillis() - t1) + " ms");
-//		Collections.sort(list);
-//		for (String string : list) {
-//			System.out.println(string);
-//		}
+		long t1 = System.currentTimeMillis();
+		List<String> list = permutation("bcda");
+		System.out.println("Time taken: " + (System.currentTimeMillis() - t1) + " ms");
+		Collections.sort(list);
+		for (String string : list) {
+			System.out.println(string);
+		}
+		System.out.println("Itertavie way:");
 		permutateIteratively("aaabbb".toCharArray());
 	}
 
